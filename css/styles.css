@@ -181,6 +181,10 @@ footer {
     height: 2em;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 th,
 td {
     border: 2px black solid;
