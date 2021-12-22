@@ -1,0 +1,300 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+#navigation1,
+#navigation2,
+#navigation3,
+#navigation4,
+#navigation5,
+#navigation6 {
+    margin: 0.2em;
+    margin-top: 0;
+}
+
+.navbar {
+    border-radius: 6px;
+    text-align: center;
+    height: fit-content;
+    background-color: rgb(90, 76, 76);
+}
+
+#next {
+    background-color: red;
+    width: fit-content;
+}
+
+img {
+    width: 100px;
+    height: 120px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#phone__number,
+#my__facebook,
+#my__instagram,
+#my__twitter,
+#my__telegram {
+    height: 20px;
+    width: 20px;
+}
+
+nav,
+footer {
+    border-radius: 4px;
+    list-style: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    height: fit-content;
+    padding: 0.25em;
+    align-content: center;
+}
+
+#navigation .links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar__prof {
+    text-transform: uppercase;
+    color: white;
+    margin-left: 2.8em;
+    padding: 0.5em 10em;
+    height: fit-content;
+    border: 1px white double;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#element1,
+#element2,
+#element3,
+#element4,
+#element5,
+#element6 {
+    height: 6em;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    font-size: 0.64em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    display: flex;
+    border: 1px solid;
+    padding: 2em 1.9em;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    color: #000000;
+    border: 1px black solid;
+    border-radius: 0%;
+    padding: 1em;
+    margin: 1em;
+}
+
+#aside1,
+#aside2 {
+    border-radius: 7px;
+    background-color: #fcda9b;
+    padding: 1em;
+    margin: 1em;
+}
+
+#event {
+    text-align: center;
+    margin-top: 100%;
+}
+
+footer {
+    font-size: x-small;
+    color: #eaddc4;
+    margin-top: 0px;
+    background-color: #555;
+    display: flex;
+}
+
+.voluntary__activity {
+    margin-top: 0%;
+    margin-left: 150px;
+}
+
+#it,
+#it1,
+#it2,
+#it3 {
+    text-decoration: none;
+}
+
+#nav__button1,
+#nav__button2 {
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+}
+
+#nav__button2 {
+    margin-left: 70%;
+}
+
+.adresses {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 10fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+#addname1,
+#addname2,
+#addname3,
+#addname4,
+#addname5 {
+    background-color: grey;
+    margin: 0.25em;
+    color: white;
+    border: 1px blanchedalmond solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 2em;
+}
+
+th,
+td {
+    border: 2px black solid;
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 425px) {
+    nav ul li {
+        flex: none;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    #container {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "navbar navbar" "main aside2" "aside1 aside1" "address address" "footer footer";
+        margin: 0 auto;
+    }
+    header {
+        grid-area: navbar;
+    }
+    main {
+        grid-area: main;
+        margin-bottom: 0;
+    }
+    #aside1 {
+        grid-area: aside1;
+    }
+    #aside2 {
+        grid-area: aside2;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .address {
+        grid-area: address;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+#table,
+#table__row {
+    padding: 2em 1em;
+    margin: 0.25em;
+}
+
+#top {
+    height: 445px;
+    width: 300px;
+}
+
+
+/* large */
+
+@media screen and (min-width: 768px) {
+    #navigation {
+        flex: none;
+    }
+    .links {
+        justify-content: center;
+    }
+    #container {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "navbar navbar navbar" "aside1 main main" "address address address" "footer footer footer";
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    header {
+        grid-area: navbar;
+    }
+    main {
+        grid-area: main;
+        margin-bottom: 1em;
+    }
+    #aside1 {
+        grid-area: aside1;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 0;
+    }
+    #aside2 {
+        grid-area: aside2;
+        border-top-right-radius: 4px;
+        margin-bottom: 0.8em;
+        border-bottom-right-radius: 6px;
+    }
+    .address {
+        grid-area: address;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+#element1:hover,
+#element2:hover,
+#element3:hover,
+#element4:hover,
+#element5:hover,
+#element6:hover {
+    background-color: rgb(231, 107, 35);
+    transition: all 1s ease;
+}
+
+#next:hover,
+#aside1:hover,
+#aside2:hover,
+#pro__text:hover {
+    background-color: rgb(197, 184, 184);
+    animation: forwards;
+}
